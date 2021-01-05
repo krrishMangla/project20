@@ -43,6 +43,7 @@ function draw() {
        {
         cat.addAnimation("cat_standing",catImg2);
         cat.changeAnimation("cat_standing",catImg2);
+        cat.x = 300;   
         rat.addAnimation("rat_standing",ratImg2);
         rat.changeAnimation("rat_standing",ratImg2);
         cat.velocityX = 0;
