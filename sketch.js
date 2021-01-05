@@ -41,12 +41,14 @@ function draw() {
 
     if(cat.x-rat.x < rat.width/2-cat.width/2) 
        {
+        cat.velocityX = 0;
         cat.addAnimation("cat_standing",catImg2);
+        cat.x = 300;       
         cat.changeAnimation("cat_standing",catImg2);
-        cat.x = 300;   
+
         rat.addAnimation("rat_standing",ratImg2);
         rat.changeAnimation("rat_standing",ratImg2);
-        cat.velocityX = 0;
+       
        } 
    
     drawSprites();
@@ -55,10 +57,11 @@ function draw() {
 
 function keyPressed(){
   if(keyCode === LEFT_ARROW){
+     cat.velocityX = -1; 
      cat.addAnimation("cat_running",catAnimation);
      cat.changeAnimation("cat_running",catAnimation);
-     cat.velocityX = -1;
      rat.addAnimation("rat_running",ratAnimation);
+     rat.frameDelay = 25;
      rat.changeAnimation("rat_running",ratAnimation);
     }
    }
