@@ -26,13 +26,13 @@ function setup(){
      cat.addImage("cat_sitting",catImg);
      cat.scale = 0.1;
      //cat.setCollider("rectangle",0,0,1100,900);
-     //cat.debug = true;
+     cat.debug = true;
 
      rat = createSprite(200,600,30,30);
      rat.addImage("rat_eating_cheese",ratImg);
      rat.scale = 0.1;
      //rat.setCollider("rectangle",0,0,800,800);
-     //rat.debug = true;
+     rat.debug = true;
 }
 
 function draw() {
