@@ -39,7 +39,7 @@ function draw() {
 
     background(gardenImg);
 
-    if(cat.x-rat.x < rat.width/2+cat.width/2) 
+    if(cat.x-rat.x < rat.width/2-cat.width/2) 
        {
         cat.velocityX = 0;
         cat.addAnimation("cat_standing",catImg2);
