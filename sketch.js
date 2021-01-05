@@ -17,10 +17,10 @@ function preload() {
 }
 
 function setup(){
-    createCanvas(800,700);
+    createCanvas(1000,800);
    
-     garden = createSprite(400,350);
-     garden.addImage("background",gardenImg)
+     //garden = createSprite(400,350);
+     //garden.addImage("background",gardenImg)
     
      cat = createSprite(650,600,30,30);
      cat.addImage("cat_sitting",catImg);
@@ -37,7 +37,7 @@ function setup(){
 
 function draw() {
 
-    background("black");
+    background(gardenImg);
 
     if(cat.x-rat.x < rat.width/2-cat.width/2) 
        {
